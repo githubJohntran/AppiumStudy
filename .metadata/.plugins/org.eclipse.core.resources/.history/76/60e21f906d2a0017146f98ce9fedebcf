@@ -1,0 +1,9 @@
+package testNGOnePack;
+
+import org.testng.annotations.Test;
+
+public class MultiTouch {
+  @Test
+  public void f() {
+  }
+}

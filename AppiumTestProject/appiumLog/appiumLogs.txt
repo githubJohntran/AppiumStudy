@@ -1,0 +1,234 @@
+2017-04-27 03:52:11:684 - warn: Appium support for versions of node < 0.12 has been deprecated and will be removed in a future version. Please upgrade!
+2017-04-27 03:52:11:723 - info: Welcome to Appium v1.4.0 (REV 8f63e2f91ef7907aed8bda763f4e5ca08e86970a)
+2017-04-27 03:52:11:724 - info: Appium REST http interface listener started on 127.0.0.1:4723
+2017-04-27 03:52:11:725 - info: [debug] Non-default server args: {"address":"127.0.0.1","noReset":true,"log":"G://Working/Testing/Automation/Appium/workspace/AppiumTestProject/appiumLog/appiumLogs.txt"}
+2017-04-27 03:52:11:725 - info: Console LogLevel: debug
+2017-04-27 03:52:11:725 - info: File LogLevel: debug
+2017-04-27 03:52:45:140 - info: --> POST /wd/hub/session {"desiredCapabilities":{"appPackage":"io.appium.android.apis","appActivity":"io.appium.android.apis.ApiDemos","platformVersion":"4.3","browserName":"","platformName":"Android","deviceName":"192.168.80.101:5555"}}
+2017-04-27 03:52:45:142 - info: Client User-Agent string: Apache-HttpClient/4.5.1 (Java/1.8.0_111)
+2017-04-27 03:52:45:143 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2017-04-27 03:52:45:143 - info: [debug] Creating new appium session 385cc505-f9a3-4e5f-913a-f86ea33c762d
+2017-04-27 03:52:45:144 - info: Starting android appium
+2017-04-27 03:52:45:144 - info: [debug] Getting Java version
+2017-04-27 03:52:45:230 - info: Java version is: 1.8.0_111
+2017-04-27 03:52:45:231 - info: [debug] Checking whether adb is present
+2017-04-27 03:52:45:233 - info: [debug] Using adb from C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe
+2017-04-27 03:52:45:233 - warn: No app capability, can't parse package/activity
+2017-04-27 03:52:45:233 - info: [debug] Set chromedriver binary as: C:\Progra~2\Appium\node_modules\appium\build\chromedriver\windows\chromedriver.exe
+2017-04-27 03:52:45:233 - info: [debug] Using fast reset? false
+2017-04-27 03:52:45:233 - info: [debug] Preparing device for session
+2017-04-27 03:52:45:234 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2017-04-27 03:52:45:234 - info: Retrieving device
+2017-04-27 03:52:45:234 - info: [debug] Trying to find a connected android device
+2017-04-27 03:52:45:234 - info: [debug] Getting connected devices...
+2017-04-27 03:52:45:235 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" devices
+2017-04-27 03:52:45:255 - info: [debug] 2 device(s) connected
+2017-04-27 03:52:45:256 - info: Found device 192.168.80.102:5555
+2017-04-27 03:52:45:256 - info: [debug] Setting device id to 192.168.80.102:5555
+2017-04-27 03:52:45:256 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2017-04-27 03:52:45:256 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 wait-for-device
+2017-04-27 03:52:45:278 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "echo 'ready'"
+2017-04-27 03:52:45:313 - info: [debug] Starting logcat capture
+2017-04-27 03:52:45:329 - info: [debug] Getting device API level
+2017-04-27 03:52:45:330 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "getprop ro.build.version.sdk"
+2017-04-27 03:52:45:399 - info: [debug] Device is at API Level 18
+2017-04-27 03:52:45:399 - info: Device API level is: 18
+2017-04-27 03:52:45:399 - info: [debug] Extracting strings for language: default
+2017-04-27 03:52:45:400 - info: [debug] Apk doesn't exist locally
+2017-04-27 03:52:45:400 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2017-04-27 03:52:45:400 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "rm -rf /data/local/tmp/strings.json"
+2017-04-27 03:52:45:442 - info: [debug] Not uninstalling app since server not started with --full-reset
+2017-04-27 03:52:45:443 - info: [debug] Skipping install since we launched with a package instead of an app path
+2017-04-27 03:52:45:443 - info: [debug] Forwarding system:4724 to device:4724
+2017-04-27 03:52:45:443 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 forward tcp:4724 tcp:4724
+2017-04-27 03:52:45:461 - info: [debug] Pushing appium bootstrap to device...
+2017-04-27 03:52:45:461 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 push "C:\\Progra~2\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2017-04-27 03:52:45:493 - info: [debug] Pushing settings apk to device...
+2017-04-27 03:52:45:494 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 install "C:\Progra~2\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2017-04-27 03:52:45:872 - info: [debug] Pushing unlock helper app to device...
+2017-04-27 03:52:45:873 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 install "C:\Progra~2\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2017-04-27 03:52:46:226 - info: Starting App
+2017-04-27 03:52:46:226 - info: [debug] Attempting to kill all 'uiautomator' processes
+2017-04-27 03:52:46:226 - info: [debug] Getting all processes with 'uiautomator'
+2017-04-27 03:52:46:227 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "ps 'uiautomator'"
+2017-04-27 03:52:46:267 - info: [debug] No matching processes found
+2017-04-27 03:52:46:267 - info: [debug] Running bootstrap
+2017-04-27 03:52:46:267 - info: [debug] spawning: C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe -s 192.168.80.102:5555 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg io.appium.android.apis -e disableAndroidWatchers false
+2017-04-27 03:52:46:351 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2017-04-27 03:52:46:351 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2017-04-27 03:52:46:351 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2017-04-27 03:52:46:351 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2017-04-27 03:52:46:352 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2017-04-27 03:52:46:352 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2017-04-27 03:52:46:352 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2017-04-27 03:52:46:352 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2017-04-27 03:52:46:358 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2017-04-27 03:52:46:360 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2017-04-27 03:52:46:361 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2017-04-27 03:52:46:361 - info: [debug] Waking up device if it's not alive
+2017-04-27 03:52:46:361 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2017-04-27 03:52:46:362 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2017-04-27 03:52:46:362 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2017-04-27 03:52:46:364 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2017-04-27 03:52:46:364 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:52:46:364 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2017-04-27 03:52:46:365 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+2017-04-27 03:52:46:366 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "dumpsys window"
+2017-04-27 03:52:46:407 - info: [debug] Screen already unlocked, continuing.
+2017-04-27 03:52:46:407 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2017-04-27 03:52:46:408 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2017-04-27 03:52:46:408 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:52:46:408 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2017-04-27 03:52:46:409 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"\/data","status":0}
+2017-04-27 03:52:46:409 - info: [debug] dataDir set to: /data
+2017-04-27 03:52:46:409 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2017-04-27 03:52:46:410 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2017-04-27 03:52:46:411 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:52:46:411 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2017-04-27 03:52:46:411 - info: [debug] Getting device API level
+2017-04-27 03:52:46:411 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "getprop ro.build.version.sdk"
+2017-04-27 03:52:46:415 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":false,"status":0}
+2017-04-27 03:52:46:445 - info: [debug] Device is at API Level 18
+2017-04-27 03:52:46:445 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n io.appium.android.apis/io.appium.android.apis.ApiDemos"
+2017-04-27 03:52:47:162 - info: [debug] Waiting for pkg "io.appium.android.apis" and activity "io.appium.android.apis.ApiDemos" to be focused
+2017-04-27 03:52:47:162 - info: [debug] Getting focused package and activity
+2017-04-27 03:52:47:163 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "dumpsys window windows"
+2017-04-27 03:52:47:270 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "getprop ro.build.version.release"
+2017-04-27 03:52:47:307 - info: [debug] Device is at release version 4.3
+2017-04-27 03:52:47:307 - info: [debug] Device launched! Ready for commands
+2017-04-27 03:52:47:307 - info: [debug] Setting command timeout to the default of 60 secs
+2017-04-27 03:52:47:307 - info: [debug] Appium session started with sessionId 385cc505-f9a3-4e5f-913a-f86ea33c762d
+2017-04-27 03:52:47:310 - info: <-- POST /wd/hub/session 303 2169.278 ms - 74 
+2017-04-27 03:52:47:347 - info: --> GET /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d {}
+2017-04-27 03:52:47:348 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"","platformVersion":"4.3","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"io.appium.android.apis","appActivity":"io.appium.android.apis.ApiDemos","platformVersion":"4.3","browserName":"","platformName":"Android","deviceName":"192.168.80.101:5555"},"appPackage":"io.appium.android.apis","appActivity":"io.appium.android.apis.ApiDemos","platformName":"Android","deviceName":"192.168.80.102:5555"},"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:52:47:350 - info: <-- GET /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d 200 2.206 ms - 653 {"status":0,"value":{"platform":"LINUX","browserName":"","platformVersion":"4.3","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"io.appium.android.apis","appActivity":"io.appium.android.apis.ApiDemos","platformVersion":"4.3","browserName":"","platformName":"Android","deviceName":"192.168.80.101:5555"},"appPackage":"io.appium.android.apis","appActivity":"io.appium.android.apis.ApiDemos","platformName":"Android","deviceName":"192.168.80.102:5555"},"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:52:52:249 - info: --> POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/timeouts {"type":"implicit","ms":15000}
+2017-04-27 03:52:52:250 - info: [debug] Set Android implicit wait to 15000ms
+2017-04-27 03:52:52:251 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:52:52:251 - info: <-- POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/timeouts 200 2.690 ms - 76 {"status":0,"value":null,"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:53:07:968 - info: --> GET /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation {}
+2017-04-27 03:53:07:969 - info: [debug] Pushing command to appium work queue: ["orientation",{}]
+2017-04-27 03:53:07:976 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"orientation","params":{}}
+2017-04-27 03:53:07:976 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:53:07:976 - info: [debug] [BOOTSTRAP] [debug] Got command action: orientation
+2017-04-27 03:53:07:979 - info: [debug] [BOOTSTRAP] [debug] Current rotation: ROTATION_0
+2017-04-27 03:53:07:979 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"PORTRAIT","status":0}
+2017-04-27 03:53:07:980 - info: [debug] Responding to client with success: {"status":0,"value":"PORTRAIT","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:53:07:981 - info: <-- GET /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation 200 13.121 ms - 82 {"status":0,"value":"PORTRAIT","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:53:15:129 - info: --> POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation {"orientation":"LANDSCAPE"}
+2017-04-27 03:53:15:129 - info: [debug] Pushing command to appium work queue: ["orientation",{"orientation":"LANDSCAPE"}]
+2017-04-27 03:53:15:131 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"orientation","params":{"orientation":"LANDSCAPE"}}
+2017-04-27 03:53:15:132 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:53:15:132 - info: [debug] [BOOTSTRAP] [debug] Got command action: orientation
+2017-04-27 03:53:15:133 - info: [debug] [BOOTSTRAP] [debug] Desired orientation: LANDSCAPE
+2017-04-27 03:53:15:133 - info: [debug] [BOOTSTRAP] [debug] Current rotation: ROTATION_0
+2017-04-27 03:53:15:263 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"Rotation (LANDSCAPE) successful.","status":0}
+2017-04-27 03:53:15:263 - info: [debug] Responding to client with success: {"status":0,"value":"Rotation (LANDSCAPE) successful.","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:53:15:264 - info: <-- POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation 200 135.081 ms - 106 {"status":0,"value":"Rotation (LANDSCAPE) successful.","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:04:500 - info: --> GET /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation {}
+2017-04-27 03:54:04:500 - info: [debug] Pushing command to appium work queue: ["orientation",{}]
+2017-04-27 03:54:04:505 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"orientation","params":{}}
+2017-04-27 03:54:04:506 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:54:04:508 - info: [debug] [BOOTSTRAP] [debug] Got command action: orientation
+2017-04-27 03:54:04:510 - info: [debug] [BOOTSTRAP] [debug] Current rotation: ROTATION_270
+2017-04-27 03:54:04:511 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"LANDSCAPE","status":0}
+2017-04-27 03:54:04:511 - info: [debug] Responding to client with success: {"status":0,"value":"LANDSCAPE","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:04:512 - info: <-- GET /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation 200 12.433 ms - 83 {"status":0,"value":"LANDSCAPE","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:14:469 - info: --> POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/element {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Views\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Views\").instance(0));"}
+2017-04-27 03:54:14:471 - info: [debug] Waiting up to 15000ms for condition
+2017-04-27 03:54:14:472 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Views\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Views\").instance(0));","context":"","multiple":false}]
+2017-04-27 03:54:14:483 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Views\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Views\").instance(0));","context":"","multiple":false}}
+2017-04-27 03:54:14:483 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:54:14:483 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] Finding new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("Views").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Views").instance(0)); using ANDROID_UIAUTOMATOR with the contextId:  multiple: false
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("Views").instance(0))
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: boolean arg: true
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: int arg: 0
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().descriptionContains("Views").instance(0), 
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().descriptionContains("Views").instance(0)
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: class java.lang.String arg: "Views"
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: int arg: 0
+2017-04-27 03:54:14:484 - info: [debug] [BOOTSTRAP] [debug] Method name: scrollIntoView
+2017-04-27 03:54:14:485 - info: [debug] [BOOTSTRAP] [debug] Setting uiObject for scrollIntoView
+2017-04-27 03:54:14:520 - info: [debug] [BOOTSTRAP] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@52625c30
+2017-04-27 03:54:17:784 - info: [debug] [BOOTSTRAP] [debug] Invoke complete.
+2017-04-27 03:54:17:784 - info: [debug] [BOOTSTRAP] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Views").instance(0))
+2017-04-27 03:54:17:784 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: boolean arg: true
+2017-04-27 03:54:17:784 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: int arg: 0
+2017-04-27 03:54:17:785 - info: [debug] [BOOTSTRAP] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().textContains("Views").instance(0), 
+2017-04-27 03:54:17:785 - info: [debug] [BOOTSTRAP] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().textContains("Views").instance(0)
+2017-04-27 03:54:17:785 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: class java.lang.String arg: "Views"
+2017-04-27 03:54:17:785 - info: [debug] [BOOTSTRAP] [debug] UiSelector coerce type: int arg: 0
+2017-04-27 03:54:17:785 - info: [debug] [BOOTSTRAP] [debug] Method name: scrollIntoView
+2017-04-27 03:54:17:785 - info: [debug] [BOOTSTRAP] [debug] Setting uiObject for scrollIntoView
+2017-04-27 03:54:17:800 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CONTAINS_DESCRIPTION=Views, INSTANCE=0]
+2017-04-27 03:54:17:829 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":{"ELEMENT":"1"},"status":0}
+2017-04-27 03:54:17:829 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:17:830 - info: <-- POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/element 200 3361.535 ms - 87 {"status":0,"value":{"ELEMENT":"1"},"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:20:413 - info: --> POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/element {"using":"name","value":"Views"}
+2017-04-27 03:54:20:413 - warn: [DEPRECATED] The name locator strategy has been deprecated and will be removed.  Please use the accessibility id locator strategy instead.
+2017-04-27 03:54:20:413 - info: [debug] Waiting up to 15000ms for condition
+2017-04-27 03:54:20:413 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"Views","context":"","multiple":false}]
+2017-04-27 03:54:20:416 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"Views","context":"","multiple":false}}
+2017-04-27 03:54:20:416 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:54:20:416 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2017-04-27 03:54:20:416 - info: [debug] [BOOTSTRAP] [debug] Finding Views using NAME with the contextId:  multiple: false
+2017-04-27 03:54:20:416 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=Views, INSTANCE=0]
+2017-04-27 03:54:20:418 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"2"},"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:20:419 - info: <-- POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/element 200 5.982 ms - 87 {"status":0,"value":{"ELEMENT":"2"},"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:20:419 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":{"ELEMENT":"2"},"status":0}
+2017-04-27 03:54:20:428 - info: --> POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/element/2/click {"id":"2"}
+2017-04-27 03:54:20:429 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"2"}]
+2017-04-27 03:54:20:430 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+2017-04-27 03:54:20:430 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:54:20:430 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2017-04-27 03:54:20:864 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+2017-04-27 03:54:20:865 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:20:865 - info: <-- POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/element/2/click 200 436.895 ms - 76 {"status":0,"value":true,"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:28:647 - info: --> POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation {"orientation":"PORTRAIT"}
+2017-04-27 03:54:28:650 - info: [debug] Pushing command to appium work queue: ["orientation",{"orientation":"PORTRAIT"}]
+2017-04-27 03:54:28:652 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"orientation","params":{"orientation":"PORTRAIT"}}
+2017-04-27 03:54:28:652 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:54:28:652 - info: [debug] [BOOTSTRAP] [debug] Got command action: orientation
+2017-04-27 03:54:28:653 - info: [debug] [BOOTSTRAP] [debug] Desired orientation: PORTRAIT
+2017-04-27 03:54:28:653 - info: [debug] [BOOTSTRAP] [debug] Current rotation: ROTATION_270
+2017-04-27 03:54:28:735 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"Rotation (PORTRAIT) successful.","status":0}
+2017-04-27 03:54:28:735 - info: [debug] Responding to client with success: {"status":0,"value":"Rotation (PORTRAIT) successful.","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:28:738 - info: <-- POST /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation 200 88.539 ms - 105 {"status":0,"value":"Rotation (PORTRAIT) successful.","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:32:346 - info: --> GET /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation {}
+2017-04-27 03:54:32:347 - info: [debug] Pushing command to appium work queue: ["orientation",{}]
+2017-04-27 03:54:32:348 - info: [debug] Responding to client with success: {"status":0,"value":"PORTRAIT","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:32:348 - info: <-- GET /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d/orientation 200 1.783 ms - 82 {"status":0,"value":"PORTRAIT","sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:32:348 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"orientation","params":{}}
+2017-04-27 03:54:32:348 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2017-04-27 03:54:32:348 - info: [debug] [BOOTSTRAP] [debug] Got command action: orientation
+2017-04-27 03:54:32:348 - info: [debug] [BOOTSTRAP] [debug] Current rotation: ROTATION_0
+2017-04-27 03:54:32:348 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"PORTRAIT","status":0}
+2017-04-27 03:54:43:401 - info: --> DELETE /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d {}
+2017-04-27 03:54:43:401 - info: Shutting down appium session
+2017-04-27 03:54:43:402 - info: [debug] Pressing the HOME button
+2017-04-27 03:54:43:402 - info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 192.168.80.102:5555 shell "input keyevent 3"
+2017-04-27 03:54:43:796 - info: [debug] Stopping logcat capture
+2017-04-27 03:54:43:799 - info: [debug] Logcat terminated with code null, signal SIGTERM
+2017-04-27 03:54:43:801 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"shutdown"}
+2017-04-27 03:54:43:801 - info: [debug] [BOOTSTRAP] [debug] Got command of type SHUTDOWN
+2017-04-27 03:54:43:802 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"OK, shutting down","status":0}
+2017-04-27 03:54:43:802 - info: [debug] [BOOTSTRAP] [debug] Closed client connection
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=.
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] Test results for WatcherResultPrinter=.
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] Time: 117.454
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] OK (1 test)
+2017-04-27 03:54:43:802 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2017-04-27 03:54:43:802 - info: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+2017-04-27 03:54:43:831 - info: [debug] UiAutomator shut down normally
+2017-04-27 03:54:43:831 - info: [debug] Cleaning up android objects
+2017-04-27 03:54:43:831 - info: [debug] Cleaning up appium session
+2017-04-27 03:54:43:832 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}
+2017-04-27 03:54:43:832 - info: <-- DELETE /wd/hub/session/385cc505-f9a3-4e5f-913a-f86ea33c762d 200 431.881 ms - 76 {"status":0,"value":null,"sessionId":"385cc505-f9a3-4e5f-913a-f86ea33c762d"}

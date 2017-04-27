@@ -1,0 +1,9 @@
+package testNGOnePack;
+
+import org.testng.annotations.Test;
+
+public class HandleAlert {
+  @Test
+  public void f() {
+  }
+}

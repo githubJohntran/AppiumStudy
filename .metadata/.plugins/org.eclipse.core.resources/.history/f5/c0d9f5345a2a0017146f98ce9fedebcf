@@ -1,0 +1,9 @@
+package testNGOnePack;
+
+import org.testng.annotations.Test;
+
+public class ElementLocatorTest {
+  @Test
+  public void f() {
+  }
+}
